@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>YukiOS</title>
+	<link rel="icon" href="Logo.png" type="image/x-icon">
+	<style>
+		body
+		{
+		background-color:black;
+		font-family:Consolas;
+		font-size:20px;
+		}
+		h1
+		{
+		margin-top:15px;
+		}
+		div
+		{
+		background-color:#222222;
+		margin:2%;
+		text-align:center;
+		color:#770099;
+		height:75px;
+		animation-name: div;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		border-radius: 20px;
+		}
+		div#left
+		{
+		width:22%;
+		float:left;
+		}
+		div#center
+		{
+		width:22%;
+		float:left;
+		}
+		div#right
+		{
+		width:22%;
+		float:right;
+ 		}
+		div.main
+		{
+		height:500px;
+		width:96%;
+		float:right;
+ 		}
+		div.hover:hover
+		{
+		background-color:#330055;
+		}
+		img.Image
+		{
+		width:200px;
+		height:300px;
+		animation-name: img;
+		animation-duration: 3s;
+		}
+		#Logo
+		{
+		width:22%;
+		height:22%;
+		float:left;
+		opacity:50%;
+		}
+		#Logo:hover
+		{
+		animation-name: Logo;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+		}
+		@keyframes div 
+		{
+		  0%  {background-color:#222222; left:0px; top:0px; height:0px;}
+		  25% {background-color:#330055; left:200px; top:200px;}
+		  50% {background-color:#222222; left:0px; top:0px;}
+		}
+		@keyframes img
+		{
+		  0%   {left:0px; top:0px; opacity:0%;}
+		  90%  {left:0px; top:0px; opacity:0%;}
+		  100% {left:0px; top:0px;}
+		}
+		@keyframes Logo 
+		{ 
+			0% {left:0px; top:0px; opacity:50%;}
+			100% {left:0px; top:0px; opacity:100%;}
+		} 
+	</style>
+</head>
+	<a href="#Main"><img id="Logo" src="Logo.png"></a>
+	<a href="#1">
+	<div class="hover" id="left">
+		<h1>1</h1>
+	</div>
+	</a>
+	<a href="#2">
+	<div class="hover" id="center">
+		<h1>2</h1>
+	</div>
+	</a>
+	<a href="https://4rlenrey.github.io/">
+	<div class="hover" id="right">
+		<h1>Good Boi</h1>
+	</div>
+	</a>
+	<div class="main">
+		<h1><i>Dog</i></h1>
+		<img class="Image" src="Image1.png">
+	</div>
+</body>
