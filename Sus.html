@@ -40,31 +40,73 @@
 	img:hover
 	{
 	animation-name: Sus;
-	animation-duration: 1s;
-	<!-- animation-fill-mode: forwards; -->
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
 	}
 	@keyframes Sus
 	{
-	0% {opacity:50%; right:0px;}
-	100% {opacity:0%; transform: skewX(50000deg);}
+	0% {opacity:100%; right:0px;}
+	100% {opacity:100%; transform: rotate(360deg);}
 	}
 	</style>
 </head>
 <body>
 	<h1>Amogus Impostorus</h1>
 	<div id="Redsus">
-		<img src="Impostor.png">
-		<img src="Impostor2.png">
-		<img src="Impostor3.png">
-		<img src="Impostor4.png">
-		<img src="Impostor5.png">
-		<img src="Impostor6.png">
+		<img onmousedown="PlaySoundA()" id=Imp1 src="Impostor.png">
+		<img onmousedown="PlaySoundB()" id=Imp2 src="Impostor2.png">
+		<img onmousedown="PlaySoundC()" id=Imp3 src="Impostor3.png">
+		<img onmousedown="PlaySoundD()" id=Imp4 src="Impostor4.png">
+		<img onmousedown="PlaySoundE()" id=Imp5 src="Impostor5.png">
+		<img onmousedown="PlaySoundF()" id=Imp6 src="Impostor6.png">
 		<p></p>
-		<img class="BigSus" src="Impostor.png">
-		<img class="BigSus" src="Impostor3.png">
-		<img class="BigSus" src="Impostor5.png">
+		<img onmousedown="PlaySoundG()" id=Imp7 class="BigSus" src="Impostor.png">
 		<p>
 		sussy baka
 		</p>
+		<audio id="a"  src="Ding1.mp3"></audio>
+		<audio id="b"  src="Ding2.mp3"></audio>
+		<audio id="c"  src="Ding3.mp3"></audio>
+		<audio id="d"  src="Ding4.mp3"></audio>
+		<audio id="e"  src="Ding5.mp3"></audio>
+		<audio id="f"  src="Ding6.mp3"></audio>
+		<audio id="g"  src="Ding7.mp3"></audio>
 	</div>
+	<script>
+	function PlaySoundA()
+	{
+	let audio = document.getElementById("a");
+	audio.play();
+	}
+	function PlaySoundB()
+	{
+	let audio = document.getElementById("b");
+	audio.play();
+	}
+	function PlaySoundC()
+	{
+	let audio = document.getElementById("c");
+	audio.play();
+	}
+	function PlaySoundD()
+	{
+	let audio = document.getElementById("d");
+	audio.play();
+	}
+	function PlaySoundE()
+	{
+	let audio = document.getElementById("e");
+	audio.play();
+	}
+	function PlaySoundF()
+	{
+	let audio = document.getElementById("f");
+	audio.play();
+	}
+	function PlaySoundG()
+	{
+	let audio = document.getElementById("g");
+	audio.play();
+	}
+	</script>
 </body>
